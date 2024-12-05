@@ -1,0 +1,58 @@
+/* Skelbimų konteineris */
+.ads-container {
+    display: flex;
+    flex-wrap: wrap; /* Leisti eiti į kitą eilutę, jei netelpa */
+    gap: 20px; /* Tarpas tarp skelbimų */
+    justify-content: center; /* Centruoti skelbimus */
+    margin-top: 20px;
+}
+
+/* Vienas skelbimas */
+.ad-card {
+    background-color: #fff; /* Balta kortelės spalva */
+    border: 1px solid #ddd; /* Pilkas rėmelis */
+    border-radius: 10px; /* Apvalinti kampai */
+    width: 250px; /* Fiksuotas kortelės plotis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Šešėlis */
+    overflow: hidden; /* Paslėpti perteklinį turinį */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Skelbimo paveikslėlis */
+.ad-card img {
+    width: 100%; /* Paveikslėlis užima visą plotį */
+    height: 150px; /* Fiksuotas aukštis */
+    object-fit: cover; /* Išlaikyti proporcijas */
+    border-bottom: 1px solid #ddd; /* Atskirti nuo teksto */
+}
+
+/* Skelbimo tekstas */
+.ad-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px 0;
+}
+
+.ad-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Skelbimo veiksmai */
+.ad-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.ad-card button:hover {
+    background-color: #0056b3;
+}

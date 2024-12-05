@@ -1,0 +1,37 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column; /* Elementai eina stulpeliu */
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-content form {
+    display: flex;
+    flex-direction: column; /* Vidiniai formos elementai eina stulpeliu */
+    width: 100%; /* Užima pilną tėvinio pločio */
+    gap: 15px; /* Tarpas tarp laukų */
+}
+
+.form-content input,
+.form-content select,
+.form-content button {
+    width: 100%; /* Laukai užima pilną formos pločio */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
